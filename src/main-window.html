@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Control Popup</title>
+    <link rel="stylesheet" href="popup/popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sound Control</h1>
+        
+        <label for="volumeControl">Volume:</label>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1">
+
+        <h2>
+            Current Sounds 
+            <button id="resetSounds" class="inline-button">Reset Sounds</button>
+        </h2>
+        <ul id="soundFilesList" class="sound-list"></ul>
+
+        <div class="collapsible">
+            <button class="collapsible-button">Select Custom Sound Files</button>
+            <div class="collapsible-content">
+                <input type="file" id="soundFiles" accept="audio/*" multiple>
+                <button id="saveButton">Save Sounds</button>
+                
+                <h2>Newly Selected Sounds</h2>
+                <ul id="newSoundsList" class="sound-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup/popup.js"></script>
+</body>
+</html>
