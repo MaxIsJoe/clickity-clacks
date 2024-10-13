@@ -2,7 +2,7 @@
 
 # Clickity Clacks
 
-An extension that plays sounds while typing for firefox, inspired by OpreaGX.
+An extension that plays sounds while typing for firefox, inspired by OperaGX.
 
 ## Notes:
 
